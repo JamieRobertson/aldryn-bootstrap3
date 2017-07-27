@@ -1109,29 +1109,63 @@ class Bootstrap3FileCMSPlugin(CMSPluginBase):
 
 plugin_pool.register_plugin(Bootstrap3RowCMSPlugin)
 plugin_pool.register_plugin(Bootstrap3ColumnCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3BlockquoteCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3CiteCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3ButtonCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3CodeCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3ImageCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3ResponsiveCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3IconCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3LabelCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3JumbotronCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3AlertCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3ListGroupCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3ListGroupItemCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3PanelCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3PanelHeadingCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3PanelBodyCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3PanelFooterCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3WellCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3TabCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3TabItemCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3AccordionCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3AccordionItemCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3CarouselCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3CarouselSlideCMSPlugin)
-# plugin_pool.register_plugin(Bootstrap3CarouselSlideFolderCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3SpacerCMSPlugin)
-plugin_pool.register_plugin(Bootstrap3FileCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'blockquote' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3BlockquoteCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3CiteCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'button' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3ButtonCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'code' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3CodeCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'image' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3ImageCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'responsive' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3ResponsiveCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'icon' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3IconCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'label' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3LabelCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'jumbotron' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3JumbotronCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'alert' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3AlertCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'listgroup' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3ListGroupCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3ListGroupItemCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'panel' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3PanelCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3PanelHeadingCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3PanelBodyCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3PanelFooterCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'well' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3WellCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'tab' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3TabCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3TabItemCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'accordion' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3AccordionCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3AccordionItemCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'carousel' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3CarouselCMSPlugin)
+    plugin_pool.register_plugin(Bootstrap3CarouselSlideCMSPlugin)
+    # plugin_pool.register_plugin(Bootstrap3CarouselSlideFolderCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'spacer' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3SpacerCMSPlugin)
+
+if constants.DISABLED_PLUGINS and 'file' not in constants.DISABLED_PLUGINS:
+    plugin_pool.register_plugin(Bootstrap3FileCMSPlugin)
