@@ -9,8 +9,10 @@ from .conf import settings
 # Changable constants, overriden through settings
 GRID_SIZE = getattr(settings, 'ALDRYN_BOOTSTRAP3_GRID_SIZE', 24)
 
+DISABLED_PLUGINS = getattr(settings, 'ALDRYN_BOOTSTRAP3_DISABLED_PLUGINS', False)
+
 # Fixed constants, not influenced by settings
-# Changes here will most likely require database migrtions
+# Changes here will most likely require database migrations
 DEVICE_CHOICES = (
     ('xs', _('Tiny')),
     ('sm', _('Small')),
