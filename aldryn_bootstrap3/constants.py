@@ -30,7 +30,6 @@ TARGET_CHOICES = (
 )
 
 CONTEXT_CHOICES = (
-    ('primary', _('Primary'),),
     ('secondary', _('Secondary'),),
     ('success', _('Success'),),
     ('info', _('Info'),),
@@ -38,19 +37,18 @@ CONTEXT_CHOICES = (
     ('danger', _('Danger'),),
 )
 
-CONTEXT_DEFAULT = 'default'
+CONTEXT_DEFAULT = 'primary'
 
 BUTTON_CONTEXT_CHOICES = (
-    ('default', _('Default'),),
+    ('primary', _('Primary'),),
 ) + CONTEXT_CHOICES + (
     ('link', _('Link'),),
 )
 
-BUTTON_CONTEXT_DEFAULT = 'default'
+BUTTON_CONTEXT_DEFAULT = 'primary'
 
 TEXT_LINK_CONTEXT_CHOICES = (
     ('', _('Default'),),
-) + CONTEXT_CHOICES + (
     ('muted ', _('Muted'),),
 )
 
