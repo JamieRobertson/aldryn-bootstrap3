@@ -31,6 +31,7 @@ TARGET_CHOICES = (
 
 CONTEXT_CHOICES = (
     ('primary', _('Primary'),),
+    ('secondary', _('Secondary'),),
     ('success', _('Success'),),
     ('info', _('Info'),),
     ('warning', _('Warning'),),
