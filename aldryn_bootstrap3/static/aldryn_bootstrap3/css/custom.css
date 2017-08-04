@@ -10,38 +10,72 @@
     line-height: 1.5;
 }
 /* btn default not really used by us */
-.btn-default {
+.btn-default, .btn-default:hover, 
+.btn-default:focus, .btn-default.focus, 
+.btn-default:active, .btn-default.active {
     color: #333;
     background-color: #fff;
     border-color: #ccc;
 }
-.btn-primary {
+.btn-primary, .btn-primary:hover, 
+.btn-primary:focus, .btn-primary.focus, 
+.btn-primary:active, .btn-primary.active {
     color: #fff;
     background-color: #b82863;
     border-color: #b82863;
 }
-.btn-secondary {
+.btn-secondary, .btn-secondary:hover, 
+.btn-secondary:focus, .btn-secondary.focus, 
+.btn-secondary:active, .btn-secondary.active {
     color: #b82863;
-    background-color: transparent; /* or white to hide markup below ? */
+    background-color: transparent;
     border-color: #b82863;
 }
-.btn-success {
+.btn-success, .btn-success:hover, 
+.btn-success:focus, .btn-success.focus, 
+.btn-success:active, .btn-success.active {
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
 }
-.btn-info {
+.btn-info, .btn-info:hover, 
+.btn-info:focus, .btn-info.focus, 
+.btn-info:active, .btn-info.active {
     color: #fff;
     background-color: #5bc0de;
     border-color: #46b8da;
 }
-.btn-warning {
+.btn-warning, .btn-warning:hover, 
+.btn-warning:focus, .btn-warning.focus, 
+.btn-warning:active, .btn-warning.active {
     color: #fff;
     background-color: #f0ad4e;
     border-color: #eea236;
 }
-.btn-danger {
+.btn-danger, .btn-danger:hover, 
+.btn-danger:focus, .btn-danger.focus, 
+.btn-danger:active, .btn-danger.active {
     color: #fff;
     background-color: #d9534f;
     border-color: #d43f3a;
+}
+/* style text-default to look like a link for preview purposes */
+.text-default {
+    color: #39c;   
+}
+.text-default:hover, .text-default:focus {
+    color: #016699;
+}
+/* btn-link is a special case */
+.btn-link {
+    color: #39c;
+    font-weight: normal;
+    border-radius: 0;
+    padding: 0;
+}
+.btn-link, .btn-link:hover, .btn-link:focus, .btn-link.focus, .btn-link:active, .btn-link.active {
+    color: #016699;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
 }

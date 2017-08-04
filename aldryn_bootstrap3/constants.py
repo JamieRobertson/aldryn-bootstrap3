@@ -48,7 +48,7 @@ BUTTON_CONTEXT_CHOICES = (
 BUTTON_CONTEXT_DEFAULT = 'primary'
 
 TEXT_LINK_CONTEXT_CHOICES = (
-    ('', _('Default'),),
+    ('default', _('Default'),),
     ('muted ', _('Muted'),),
 )
 
