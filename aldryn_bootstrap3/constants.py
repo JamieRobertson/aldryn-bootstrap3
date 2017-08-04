@@ -52,7 +52,7 @@ TEXT_LINK_CONTEXT_CHOICES = (
     ('muted ', _('Muted'),),
 )
 
-TEXT_LINK_CONTEXT_DEFAULT = ''
+TEXT_LINK_CONTEXT_DEFAULT = 'default'
 
 ASPECT_RATIOS = (
     (4, 3),
