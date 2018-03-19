@@ -1,6 +1,8 @@
 <div class="btn-group btn-group-sizes js-btn-group-sizes" data-toggle="buttons">
-    {% for item in selects %}
-        {{ item }}
+    {% for group, options, index in widget.optgroups %}
+        {% for option in options %}
+            {% include option.template_name with widget=option %}
+        {% endfor %}
     {% endfor %}
 </div>
 
