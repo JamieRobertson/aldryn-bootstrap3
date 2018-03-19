@@ -73,7 +73,7 @@ class Responsive(Textarea):
         return rendered
 
 
-class ResponsivePrint(django.forms.widgets.Textarea):
+class ResponsivePrint(Textarea):
     def render(self, name, value, attrs=None):
         from django.template.loader import render_to_string
         widget_html = super(ResponsivePrint, self).render(
